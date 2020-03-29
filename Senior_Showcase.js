@@ -63,8 +63,5 @@ function mouseDragged() {
 }
 
 function keyPressed() {
-  if(key=='h')
-  {
-    gameState=1;
-  }
+  gameState = (gameState + 1) % 2
 }
